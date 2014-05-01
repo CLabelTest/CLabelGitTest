@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        test 2.25.2014 with GitHub from ClRelease</div>
+        test 2.25.2014 with GitHub from Win8</div>
     </form>
 </body>
 </html>
