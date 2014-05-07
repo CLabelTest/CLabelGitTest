@@ -9,8 +9,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    test folder
-        from clrelease</div>
+        test folder local
+    </div>
     </form>
 </body>
 </html>
