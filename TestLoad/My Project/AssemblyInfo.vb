@@ -8,7 +8,7 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 <Assembly: AssemblyTitle("TestLoad")> 
-<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyDescription("TestLoad Desc")> 
 <Assembly: AssemblyCompany("Microsoft")> 
 <Assembly: AssemblyProduct("TestLoad")> 
 <Assembly: AssemblyCopyright("Copyright © Microsoft 2013")> 
