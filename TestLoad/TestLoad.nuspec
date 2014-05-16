@@ -14,8 +14,8 @@
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
     <copyright>Copyright 2014</copyright>
     <tags>Tag1 Tag2</tags>
-    <files>
-      <file src="lib\net40\*.dll" target="bin" />
-    </files>
   </metadata>
+  <files>
+    <file src="lib\net40\*.dll" target="bin" />
+  </files>
 </package>
