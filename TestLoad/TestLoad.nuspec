@@ -16,6 +16,6 @@
     <tags>Tag1 Tag2</tags>
   </metadata>
   <files>
-    <file src="lib\net40\*.dll" target="bin" />
+    <file src="lib\net40\*.dll" target="content\bin" />
   </files>
 </package>
