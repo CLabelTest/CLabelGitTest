@@ -92,10 +92,6 @@
   <ItemGroup>
     <Content Include="default.aspx" />
     <Content Include="Folder\WebForm2.aspx" />
-    <Content Include="packages\OctoPack.3.0.27\license.txt" />
-    <Content Include="packages\OctoPack.3.0.27\tools\NuGet.exe" />
-    <Content Include="packages\OctoPack.3.0.27\tools\OctoPack.Tasks.dll" />
-    <Content Include="packages\OctoPack.3.0.27\tools\OctoPack.Tasks.pdb" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -161,15 +157,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <Content Include="packages.config" />
-    <Content Include="packages\OctoPack.3.0.27\content\net35\_._" />
-    <Content Include="packages\OctoPack.3.0.27\content\net40\_._" />
-    <Content Include="packages\OctoPack.3.0.27\content\netcore45\_._" />
-    <Content Include="packages\OctoPack.3.0.27\OctoPack.3.0.27.nupkg" />
-    <Content Include="packages\OctoPack.3.0.27\OctoPack.3.0.27.nuspec" />
-    <Content Include="packages\OctoPack.3.0.27\tools\Install.ps1" />
-    <Content Include="packages\OctoPack.3.0.27\tools\OctoPack.targets" />
-    <Content Include="packages\OctoPack.3.0.27\tools\Uninstall.ps1" />
-    <Content Include="packages\repositories.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
