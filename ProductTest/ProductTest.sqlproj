@@ -15,6 +15,7 @@ User=[ProductTest];
 </ExcludeObjectsFromSync>
     <IncludeObjectsInDataSync />
     <DeployChangesInitialImportDone>True</DeployChangesInitialImportDone>
+    <GenerateOctopusNuPkg>True</GenerateOctopusNuPkg>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -158,6 +159,7 @@ User=[ProductTest];
   </ItemGroup>
   <ItemGroup>
     <None Include="Pre-Deployment\01_Create_Database.sql" />
+    <None Include="ProductTest.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Post-Deployment\01_Finalize_Deployment.sql" />
@@ -171,5 +173,11 @@ User=[ProductTest];
   </ItemGroup>
   <ItemGroup>
     <None Include="Deploy-Once\1.0.0\001_20140625-1557_dmudge.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="DatabaseServer">
+      <DefaultValue>cltestdb\cltestdb</DefaultValue>
+      <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
   </ItemGroup>
 </Project>
