@@ -15,7 +15,7 @@ User=[ProductTest];
 </ExcludeObjectsFromSync>
     <IncludeObjectsInDataSync />
     <DeployChangesInitialImportDone>True</DeployChangesInitialImportDone>
-    <GenerateOctopusNuPkg>True</GenerateOctopusNuPkg>
+    <GenerateOctopusNuPkg>False</GenerateOctopusNuPkg>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -29,13 +29,13 @@ User=[ProductTest];
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>ProductTest</RootNamespace>
-    <AssemblyName>ProductTest</AssemblyName>
+    <RootNamespace>ProductTest_DEV</RootNamespace>
+    <AssemblyName>ProductTest_DEV</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetLanguage>CS</TargetLanguage>
+    <TargetLanguage>VB</TargetLanguage>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <SqlServerVerification>False</SqlServerVerification>
     <GenerateCreateScript>False</GenerateCreateScript>
@@ -123,6 +123,7 @@ User=[ProductTest];
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <SqlTargetName>ProductTest_DEV</SqlTargetName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
