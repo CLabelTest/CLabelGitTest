@@ -177,7 +177,7 @@ User=[ProductTest];
   </ItemGroup>
   <ItemGroup>
     <SqlCmdVariable Include="DatabaseServer">
-      <DefaultValue>cltestdb\cltestdb</DefaultValue>
+      <DefaultValue>cltestdb\cltest</DefaultValue>
       <Value>$(SqlCmdVar__1)</Value>
     </SqlCmdVariable>
   </ItemGroup>
