@@ -161,7 +161,7 @@ User=[ProductTest];
   <ItemGroup>
     <None Include="Pre-Deployment\01_Create_Database.sql" />
     <None Include="ProductTest.nuspec">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>DoNotCopy</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
