@@ -15,7 +15,7 @@ User=[ProductTest];
 </ExcludeObjectsFromSync>
     <IncludeObjectsInDataSync />
     <DeployChangesInitialImportDone>True</DeployChangesInitialImportDone>
-    <GenerateOctopusNuPkg>False</GenerateOctopusNuPkg>
+    <GenerateOctopusNuPkg>True</GenerateOctopusNuPkg>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
