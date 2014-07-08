@@ -16,7 +16,7 @@ CREATE PROCEDURE [dbo].[PT_S_PT_DATA_Products]
 AS
 SELECT
 	PTP.ID,
-	PTP.Name,
+	PTP.Name As TestName,
 	PTPC.Description AS Category,
 	PTP.CategoryID,
 	PTP.Price,
