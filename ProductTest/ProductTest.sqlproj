@@ -177,10 +177,4 @@ User=[ProductTest];
   <ItemGroup>
     <None Include="Deploy-Once\1.0.0\001_20140625-1557_dmudge.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <SqlCmdVariable Include="DatabaseServer">
-      <DefaultValue>cltestdb\cltest</DefaultValue>
-      <Value>$(SqlCmdVar__1)</Value>
-    </SqlCmdVariable>
-  </ItemGroup>
 </Project>
