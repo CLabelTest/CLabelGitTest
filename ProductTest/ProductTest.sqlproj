@@ -178,9 +178,17 @@ User=[ProductTest];
     <None Include="Deploy-Once\1.0.0\001_20140625-1557_dmudge.sql" />
   </ItemGroup>
   <ItemGroup>
+    <SqlCmdVariable Include="DatabasePassword">
+      <DefaultValue>Same4both</DefaultValue>
+      <Value>$(SqlCmdVar__3)</Value>
+    </SqlCmdVariable>
     <SqlCmdVariable Include="DatabaseServer">
       <DefaultValue>cltestdb\cltestdb</DefaultValue>
       <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="DatabaseUserName">
+      <DefaultValue>sa</DefaultValue>
+      <Value>$(SqlCmdVar__2)</Value>
     </SqlCmdVariable>
   </ItemGroup>
 </Project>
