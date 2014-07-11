@@ -191,4 +191,7 @@ User=[ProductTest];
       <Value>$(SqlCmdVar__2)</Value>
     </SqlCmdVariable>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Deploy-Changes\Stored Procedures\dbo.PT_S_PT_DATA_Products2.sql" />
+  </ItemGroup>
 </Project>
