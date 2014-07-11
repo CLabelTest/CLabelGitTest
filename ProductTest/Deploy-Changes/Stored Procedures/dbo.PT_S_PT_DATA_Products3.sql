@@ -1,12 +1,11 @@
-﻿IF OBJECT_ID('[dbo].[PT_S_PT_DATA_Products]') IS NOT NULL
-	DROP PROCEDURE [dbo].[PT_S_PT_DATA_Products];
+﻿IF OBJECT_ID('[dbo].[PT_S_PT_DATA_Products3]') IS NOT NULL
+	DROP PROCEDURE [dbo].[PT_S_PT_DATA_Products3];
 
 GO
 SET ANSI_NULLS ON
 SET QUOTED_IDENTIFIER ON
 GO
-
-CREATE PROCEDURE [dbo].[PT_S_PT_DATA_Products]
+CREATE PROCEDURE [dbo].[PT_S_PT_DATA_Products3]
 (
 	@ID					int,
     @Name				varchar(50),
@@ -16,7 +15,7 @@ CREATE PROCEDURE [dbo].[PT_S_PT_DATA_Products]
 AS
 SELECT
 	PTP.ID,
-	PTP.Name AS Name2,
+	PTP.Name,
 	PTPC.Description AS Category,
 	PTP.CategoryID,
 	PTP.Price,

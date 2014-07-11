@@ -194,4 +194,7 @@ User=[ProductTest];
   <ItemGroup>
     <None Include="Deploy-Changes\Stored Procedures\dbo.PT_S_PT_DATA_Products2.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Deploy-Changes\Stored Procedures\dbo.PT_S_PT_DATA_Products3.sql" />
+  </ItemGroup>
 </Project>
