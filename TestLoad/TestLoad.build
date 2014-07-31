@@ -2,7 +2,7 @@
   <PropertyGroup>
     <WorkingFolder>$(MSBuildProjectDirectory)</WorkingFolder>    
     <Configuration>Release</Configuration>
-    <SolutionFile>TestLoad.sln</SolutionFile>
+    <SolutionFile>TestLoad.vbproj</SolutionFile>
   </PropertyGroup>  
   
   <Target Name="BuildAll" DependsOnTargets="Compile" />  
