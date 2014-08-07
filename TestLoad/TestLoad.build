@@ -22,7 +22,17 @@
     <!-- Running ASP.NET publish -->
     <MSBuild Projects="$(WebProject)"
          Targets="ResolveReferences;_CopyWebApplication"
-         Properties="Configuration=Release;WebProjectOutputDir=..\..\$(WebPublishFolder);OutDir=..\..\$(WebPublishFolder)\bin\" />
+         Properties="Configuration=Release;
+                     MvcBuildViews=False;
+                     DeployOnBuild=true;
+                     DeployTarget=MSDeployPublish;
+                     CreatePackageOnPublish=True;
+                     AllowUntrustedCertificate=True;
+                     MSDeployPublishMethod=RemoteAgent;
+                     SkipExtraFilesOnServer=True;
+                     ContinueOnError=false;
+                     WebProjectOutputDir=..\..\$(WebPublishFolder);
+                     OutDir=..\..\$(WebPublishFolder)\bin\" />
 
   </Target>
 </Project>
