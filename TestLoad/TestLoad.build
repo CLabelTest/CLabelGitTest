@@ -13,7 +13,7 @@
 
   <Target Name="Build">
     <!-- Compilation of all projects -->
-    <!-- <MSBuild Projects="TestLoad.vbproj" Properties="Configuration=Release"/> -->
+    <MSBuild Projects="TestLoad.vbproj" Properties="Configuration=Release"/>
 
     <!-- Creating web publish folder. -->
     <RemoveDir Directories="$(WebPublishFolder)"/>
