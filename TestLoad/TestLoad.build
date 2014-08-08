@@ -20,7 +20,7 @@
     <MakeDir Directories="$(WebPublishFolder)"/>
 
     <!-- Running ASP.NET publish -->
-    <MSBuild Projects="$(WebProject)"
+    <!-- <MSBuild Projects="$(WebProject)"
          Targets="ResolveReferences;_CopyWebApplication"
          Properties="Configuration=Release;
                      MvcBuildViews=False;
@@ -32,7 +32,7 @@
                      SkipExtraFilesOnServer=True;
                      ContinueOnError=false;
                      WebProjectOutputDir=..\..\$(WebPublishFolder);
-                     OutDir=..\..\$(WebPublishFolder)\bin\" />
+                     OutDir=..\..\$(WebPublishFolder)\bin\" /> -->
 
   </Target>
 </Project>
