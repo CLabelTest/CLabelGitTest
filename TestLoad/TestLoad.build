@@ -5,6 +5,21 @@
     <WebProject>TestLoad.vbproj</WebProject>
     <WebProjectFolder>TestLoad</WebProjectFolder>
     <WebPublishFolder>TestLoadPublish</WebPublishFolder>
+    
+    <WebPublishMethod>FileSystem</WebPublishMethod>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <SiteUrlToLaunchAfterPublish />
+    <ExcludeApp_Data>True</ExcludeApp_Data>
+    <publishUrl>E:\TeamCity\buildAgent\work\a18de76f901e3266\TestLoadPublish</publishUrl>
+    <DeleteExistingFiles>True</DeleteExistingFiles>
+    <LaunchSiteAfterPublish>True</LaunchSiteAfterPublish>
+    <PrecompileBeforePublish>True</PrecompileBeforePublish>
+    <EnableUpdateable>False</EnableUpdateable>
+    <DebugSymbols>False</DebugSymbols>
+    <WDPMergeOption>MergeAllPagesAndControlToASingleAssembly</WDPMergeOption>
+    <UseMerge>True</UseMerge>
+    <ContentAssemblyName>TestLoad2</ContentAssemblyName>
   </PropertyGroup>
 
   <!-- <ItemGroup>
@@ -34,19 +49,34 @@
                      ContinueOnError=false;
                      WebProjectOutputDir=..\..\$(WebPublishFolder);
                      OutDir=..\..\$(WebPublishFolder)\bin\" />
-
                      -->
-
-    
-    <AspNetCompiler
+   
+    <!-- <AspNetCompiler
       VirtualPath="/"
       PhysicalPath="$(teamcity_build_workingDir)\TestLoad"
       TargetPath="$(teamcity_build_workingDir)\TestLoadPublish"
+      Clean="true"
       Force="true"
       Debug="false"
       Updateable="false"
       ToolPath="C:\Windows\Microsoft.NET\Framework\v4.0.30319\"
- />    
-
+    />
+    -->
+    
+   <!--  <AspNetMerge
+              ExePath="C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools"
+              ApplicationPath="$(teamcity_build_workingDir)\TestLoad"
+              SingleAssemblyName="$(SingleAssemblyName)"
+              Debug="$(DebugSymbols)"
+              Nologo="$(NoLogo)"
+              ContentAssemblyName="$(ContentAssemblyName)"
+              ErrorStack="$(ErrorStack)"
+              RemoveCompiledFiles="$(DeleteAppCodeCompiledFiles)"
+              CopyAttributes="$(CopyAssemblyAttributes)"
+              AssemblyInfo="$(AssemblyInfoDll)"
+              MergeXmlDocs="$(MergeXmlDocs)"
+              ErrorLogFile="$(MergeErrorLogFile)"
+    />
+    -->
   </Target>
 </Project>
