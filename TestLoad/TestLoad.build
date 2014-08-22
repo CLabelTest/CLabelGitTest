@@ -45,6 +45,7 @@
       Force="true"
       Debug="false"
       Updateable="false"
+      ToolPath="C:\Windows\Microsoft.NET\Framework\v4.0.30319\"
  />    
 
   </Target>
