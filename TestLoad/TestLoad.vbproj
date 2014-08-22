@@ -92,6 +92,7 @@
   <ItemGroup>
     <Content Include="default.aspx" />
     <Content Include="Folder\WebForm2.aspx" />
+    <Content Include="TestLoad.build" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>

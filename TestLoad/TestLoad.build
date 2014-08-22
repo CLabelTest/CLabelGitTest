@@ -34,14 +34,14 @@
                      WebProjectOutputDir=..\..\$(WebPublishFolder);
                      OutDir=..\..\$(WebPublishFolder)\bin\" /> -->
 
-    <AspNetCompiler
+    <!-- <AspNetCompiler
          VirtualPath="/$(WebProjectFolder)"
      PhysicalPath="$(WebPublishFolder)"
      TargetPath="$(WebPublishFolder)"
      Force="true"
      Debug="false"
      Updateable="false"
- />
+ /> -->
     
 
   </Target>
