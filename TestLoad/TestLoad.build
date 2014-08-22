@@ -39,7 +39,7 @@
     
     <AspNetCompiler
       VirtualPath="/"
-      PhysicalPath="/"
+      PhysicalPath="$(WebProjectFolder)"
       TargetPath="$(WebPublishFolder)"
       Force="true"
       Debug="false"
