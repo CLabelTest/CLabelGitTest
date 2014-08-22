@@ -41,7 +41,7 @@
     <AspNetCompiler
       VirtualPath="/"
       PhysicalPath="$(teamcity_build_workingDir)\TestLoad"
-      TargetPath="$(WebPublishFolder)"
+      TargetPath="$(teamcity_build_workingDir)\TestLoadPublish"
       Force="true"
       Debug="false"
       Updateable="false"
