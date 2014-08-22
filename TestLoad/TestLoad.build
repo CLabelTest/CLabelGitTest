@@ -33,11 +33,12 @@
                      ContinueOnError=false;
                      WebProjectOutputDir=..\..\$(WebPublishFolder);
                      OutDir=..\..\$(WebPublishFolder)\bin\" />
-                           VirtualPath=""
+
                      -->
 
     
     <AspNetCompiler
+      VirtualPath="/"
       PhysicalPath=""
       TargetPath="$(WebPublishFolder)"
       Force="true"
