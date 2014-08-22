@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <WebProject>TestLoad.vbproj</WebProject>
+    <WebProjectFolder>TestLoad</WebProjectFolder>
+    <WebPublishFolder>TestLoadPublish</WebPublishFolder>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ZipFiles Include="$(teamcity_build_workingDir)\src\TestLoad\$(WebPublishFolder)\**\*.*" />
+  </ItemGroup>
+
+  <Target Name="Build">
+    <!-- Compilation of all projects -->
+    <MSBuild Projects="TestLoad.vbproj" Properties="Configuration=Release"/>
+
+    <!-- Creating web publish folder. -->
+    <RemoveDir Directories="$(WebPublishFolder)"/>
+    <MakeDir Directories="$(WebPublishFolder)"/>
+
+    <!-- Running ASP.NET publish -->
+    <!-- <MSBuild Projects="$(WebProject)"
+         Targets="ResolveReferences;_CopyWebApplication"
+         Properties="Configuration=Release;
+                     MvcBuildViews=False;
+                     DeployOnBuild=true;
+                     DeployTarget=MSDeployPublish;
+                     CreatePackageOnPublish=True;
+                     AllowUntrustedCertificate=True;
+                     MSDeployPublishMethod=RemoteAgent;
+                     SkipExtraFilesOnServer=True;
+                     ContinueOnError=false;
+                     WebProjectOutputDir=..\..\$(WebPublishFolder);
+                     OutDir=..\..\$(WebPublishFolder)\bin\" /> -->
+
+    <AspNetCompiler
+         VirtualPath="/$(WebProjectFolder)"
+     PhysicalPath="$(WebPublishFolder)"
+     TargetPath="$(WebPublishFolder)"
+     Force="true"
+     Debug="false"
+     Updateable="false"
+ />
+    
+
+  </Target>
+</Project>
