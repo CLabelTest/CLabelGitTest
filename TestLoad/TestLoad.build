@@ -7,10 +7,11 @@
     <WebPublishFolder>TestLoadPublish</WebPublishFolder>
   </PropertyGroup>
 
-  <ItemGroup>
+  <!-- <ItemGroup>
     <ZipFiles Include="$(teamcity_build_workingDir)\src\TestLoad\$(WebPublishFolder)\**\*.*" />
   </ItemGroup>
-
+  -->
+  
   <Target Name="Build">
     <!-- Compilation of all projects -->
     <MSBuild Projects="TestLoad.vbproj" Properties="Configuration=Release"/>
@@ -39,7 +40,7 @@
     
     <AspNetCompiler
       VirtualPath="/"
-      PhysicalPath="$(WebProjectFolder)"
+      PhysicalPath="$(teamcity_build_workingDir)\TestLoad"
       TargetPath="$(WebPublishFolder)"
       Force="true"
       Debug="false"
