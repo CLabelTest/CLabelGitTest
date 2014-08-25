@@ -51,7 +51,7 @@
                      OutDir=..\..\$(WebPublishFolder)\bin\" />
                      -->
    
-    <!-- <AspNetCompiler
+    <AspNetCompiler
       VirtualPath="/"
       PhysicalPath="$(teamcity_build_workingDir)\TestLoad"
       TargetPath="$(teamcity_build_workingDir)\TestLoadPublish"
@@ -61,7 +61,6 @@
       Updateable="false"
       ToolPath="C:\Windows\Microsoft.NET\Framework\v4.0.30319\"
     />
-    -->
     
    <!--  <AspNetMerge
               ExePath="C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools"
