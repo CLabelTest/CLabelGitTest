@@ -9,7 +9,4 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>TestLoad deployment package</description>
   </metadata>
-  <files>
-    <file exclude="**\*.pdb;" />
-  </files>  
 </package>
