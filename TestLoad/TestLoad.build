@@ -6,7 +6,7 @@
     <WebProjectFolder>TestLoad</WebProjectFolder>
     <WebPublishFolder>TestLoadPublish</WebPublishFolder>
     <Configuration>Release</Configuration>
-    <DebugSymbols>false</DebugSymbols>
+    <DebugSymbols>None</DebugSymbols>
   </PropertyGroup>
 
   <!-- <ItemGroup>
