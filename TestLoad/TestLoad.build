@@ -5,6 +5,7 @@
     <WebProject>TestLoad.vbproj</WebProject>
     <WebProjectFolder>TestLoad</WebProjectFolder>
     <WebPublishFolder>TestLoadPublish</WebPublishFolder>
+    <DebugType>None</DebugType>
   </PropertyGroup>
 
   <!-- <ItemGroup>
