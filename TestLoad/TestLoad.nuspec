@@ -1,5 +1,12 @@
 <package>
   <metadata>
+    <id></id>
+    <version></version>
+    <authors>SYSTEM</authors>
+    <owners>SYSTEM</owners>
+    <licenseUrl>http://example.com</licenseUrl>
+    <projectUrl>http://example.com</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>TestLoad deployment package</description>
   </metadata>
 </package>
