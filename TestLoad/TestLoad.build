@@ -5,8 +5,6 @@
     <WebProject>TestLoad.vbproj</WebProject>
     <WebProjectFolder>TestLoad</WebProjectFolder>
     <WebPublishFolder>TestLoadPublish</WebPublishFolder>
-    <DebugType>None</DebugType>
-    <DebugSymbols>False</DebugSymbols>
   </PropertyGroup>
 
   <!-- <ItemGroup>
