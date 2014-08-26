@@ -5,6 +5,8 @@
     <WebProject>TestLoad.vbproj</WebProject>
     <WebProjectFolder>TestLoad</WebProjectFolder>
     <WebPublishFolder>TestLoadPublish</WebPublishFolder>
+    <Configuration>Release</Configuration>
+    <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
 
   <!-- <ItemGroup>
@@ -13,8 +15,8 @@
   -->
   
   <Target Name="Build">
-    <!-- Compilation of all projects -->
-    <MSBuild Projects="TestLoad.vbproj" Properties="Configuration=Release" />
+    <!-- Compilation of all projects Properties="Configuration=Release" -->
+    <MSBuild Projects="TestLoad.vbproj" />
 
     <!-- Creating web publish folder. -->
     <RemoveDir Directories="$(WebPublishFolder)"/>
