@@ -112,7 +112,7 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile  Include="My Project\Application.Designer.vb">
+    <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
@@ -130,6 +130,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Settings.vb" />
     <Compile Include="WebForm1.aspx.designer.vb">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
@@ -205,16 +206,7 @@
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="AfterBuild">
-      <AspNetCompiler
-          VirtualPath="/"
-          PhysicalPath="E:\TeamCity\buildAgent\work\a18de76f901e3266\TestLoad"
-          TargetPath="E:\TeamCity\buildAgent\work\a18de76f901e3266\TestLoadPublish"
-          Clean="true"
-          Force="true"
-          Debug="false"
-          Updateable="false"
-          ToolPath="C:\Windows\Microsoft.NET\Framework\v4.0.30319\"
-      />
+    <AspNetCompiler VirtualPath="/" PhysicalPath="E:\TeamCity\buildAgent\work\a18de76f901e3266\TestLoad" TargetPath="E:\TeamCity\buildAgent\work\a18de76f901e3266\TestLoadPublish" Clean="true" Force="true" Debug="false" Updateable="false" ToolPath="C:\Windows\Microsoft.NET\Framework\v4.0.30319\" />
   </Target>
   <Import Project="packages\OctoPack.3.0.27\tools\OctoPack.targets" Condition="Exists('packages\OctoPack.3.0.27\tools\OctoPack.targets')" />
   <Target Name="EnsureOctoPackImported" BeforeTargets="BeforeBuild" Condition="'$(OctoPackImported)' == ''">
@@ -226,5 +218,4 @@
   <Target Name="BeforeBuild">
   </Target>
   -->
-
 </Project>
