@@ -91,7 +91,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="default.aspx" />
+    <Content Include="default.aspx" />
     <Content Include="Folder\WebForm2.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
