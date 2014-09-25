@@ -206,8 +206,6 @@
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="AfterBuild">
-    <AspNetCompiler VirtualPath="/" PhysicalPath="E:\TeamCity\buildAgent\work\a18de76f901e3266\TestLoad" TargetPath="E:\TeamCity\buildAgent\work\a18de76f901e3266\TestLoadPublish" Clean="true" Force="true" Debug="false" Updateable="false" ToolPath="C:\Windows\Microsoft.NET\Framework\v4.0.30319\" />
-	<AspNetMerge ExePath="C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\aspnet_merge.exe" ApplicationPath="E:\TeamCity\buildAgent\work\a18de76f901e3266\TestLoadPublish" ContentAssemblyName="TestLoad2" />
   </Target>
   <Import Project="packages\OctoPack.3.0.27\tools\OctoPack.targets" Condition="Exists('packages\OctoPack.3.0.27\tools\OctoPack.targets')" />
   <Target Name="EnsureOctoPackImported" BeforeTargets="BeforeBuild" Condition="'$(OctoPackImported)' == ''">
