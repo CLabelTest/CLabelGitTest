@@ -9,8 +9,4 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>TestLoad deployment package</description>
   </metadata>
-  <files>
-    <file src="E:\TeamCity\buildAgent\work\a18de76f901e3266\TestLoadPublish\default.aspx" target="default.aspx" />
-    <file src="E:\TeamCity\buildAgent\work\a18de76f901e3266\TestLoadPublish\bin\default.aspx.cdcab7d2.compiled" target="default.aspx.cdcab7d2.compiled" />
-  </files>
 </package>
