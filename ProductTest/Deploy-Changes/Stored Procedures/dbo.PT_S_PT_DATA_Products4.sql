@@ -16,7 +16,7 @@ AS
 SELECT
 	PTP.ID,
 	PTP.Name,
-	PTPC.Description AS Category,
+	PTPC.Description AS Category_Desc,
 	PTP.CategoryID,
 	PTP.Price,
 	PTP.DateCreated
